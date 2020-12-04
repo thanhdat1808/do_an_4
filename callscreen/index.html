@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<div class="main">
+	<div class="call-screen">
+		<div class="call">
+			<div class="roll">
+				<div class="user-call">
+					<div class="avatar">
+						
+					</div>
+				</div>
+				<div class="user-call">
+					<div class="avatar">
+						
+					</div>
+				</div>
+				<div class="user-call">
+					<div class="avatar">
+						
+					</div>
+				</div>
+			</div>	
+			<div class="roll">
+				<div class="user-call">
+					<div class="avatar">
+						
+					</div>
+				</div>
+				<div class="user-call">
+					<div class="avatar">
+						
+					</div>
+				</div>
+				<div class="user-call">
+					<div class="avatar">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button">
+			<div class="camera-on" id="on" >
+				<button onclick="setoff()" title="Turn off camera"><img src="https://img.icons8.com/ios/100/000000/no-video--v2.png"/></i></button>
+			</div>
+			<div class="camera-off" id="off">
+				<button onclick="seton()" title="Turn on camera"><img src="https://img.icons8.com/ios/100/000000/no-video--v1.png"/></i></button>
+			</div>
+			<div class="end-call">
+				<button title="End call"><img src="https://image.flaticon.com/icons/png/512/733/733497.png"/></button>
+			</div>
+			<div class="mic-on" id="micon">
+				<button onclick="micon()" title="Turn off mic"><img src="https://img.icons8.com/windows/100/000000/microphone--v1.png"/></button>
+			</div>
+			<div class="mic-off" id="micoff">
+				<button onclick="micoff()" title="Turn on mic"><img src="https://img.icons8.com/windows/32/000000/no-microphone.png"/></button>
+			</div>
+		</div>
+	</div>
+	<div class="chat-screen">
+		<div class="title">
+			<img src="https://img.icons8.com/nolan/64/messages-mac.png"/>
+			<h3>Trò chuyện</h3>
+		</div>
+		<div class="chat">
+				<div class="messager">
+					<div class="user-name" id="user-name">
+						<b>Đạt</b>
+						<p>16:31</p>
+					</div>
+					<span class="content">
+						<p>Hello n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.n the code, the origin is your default remote repository name and '-u' flag is upstream, which is equivalent to '-set-upstream.' and the master is the branch, name.upstream is the repository that we have cloned the project.</p>
+					</span>
+
+					<div class="user-name" id="user-name"> 
+						<b>VuCms</b>
+						<p>16:31</p>
+					</div>
+					<span class="content">
+						<p>Hi</p>
+					</span>
+				</div>
+			<div class="input">
+				<textarea name="text" id="text" onkeyup ="change()" placeholder="Gửi tin nhắn cho mọi người"></textarea>
+				<button id="btnsend" title="Gửi tin nhắn"><img src="https://img.icons8.com/small/100/000000/filled-sent.png"/></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function setoff(){
+		document.getElementById("on").style.display = 'none';
+		document.getElementById("off").style.display = 'block';
+	}
+	function seton(){
+		document.getElementById("off").style.display = 'none';
+		document.getElementById("on").style.display = 'block';
+	}
+	function micon(){
+		document.getElementById("micon").style.display = 'none';
+		document.getElementById("micoff").style.display = 'block';
+	}
+	function micoff(){
+		document.getElementById("micoff").style.display = 'none';
+		document.getElementById("micon").style.display = 'block';
+	}
+	function change(){
+		var text = document.getElementById("text").value;
+		if (text != "") {
+			document.getElementById("btnsend").style.cursor = 'pointer';
+			document.getElementById("btnsend").style.opacity = '1';
+		}
+		else{
+			document.getElementById("btnsend").style.cursor = 'not-allowed';
+			document.getElementById("btnsend").style.opacity = '0.2';
+		}
+	}
+</script>
+</body>
+</html>
