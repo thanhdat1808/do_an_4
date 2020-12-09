@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style_prepare.css">
+</head>
+<body>
+<div class="header">
+	<div class="logo">
+		<img src="img\Call.Group-Logo-pos-01-01.png">
+	</div>
+</div>
+<div class="main">
+	<div class="call-screen">
+		<div class="text" >
+			<span class="a"id="text">Máy ảnh đang tắt</span>
+		</div>
+		<div class="button">
+			<div class="camera-on" id="on" >
+				<button onclick="setoff()" title="Turn off camera"><img src="https://img.icons8.com/ios/100/000000/no-video--v2.png"/></i></button>
+			</div>
+			<div class="camera-off" id="off">
+				<button onclick="seton()" title="Turn on camera"><img src="https://img.icons8.com/ios/100/000000/no-video--v1.png"/></i></button>
+			</div>
+			<div class="mic-on" id="micon">
+				<button onclick="micon()" title="Turn off mic"><img src="https://img.icons8.com/windows/100/000000/microphone--v1.png"/></button>
+			</div>
+			<div class="mic-off" id="micoff">
+				<button onclick="micoff()" title="Turn on mic"><img src="https://img.icons8.com/windows/32/000000/no-microphone.png"/></button>
+			</div>
+		</div>
+	</div>
+	<div class="join">
+		
+	</div>
+</div>
+<script type="text/javascript">
+	function setoff(){
+		document.getElementById("on").style.display = 'none';
+		document.getElementById("off").style.display = 'block';
+		document.getElementById("text").style.display = 'block';
+	}
+	function seton(){
+		document.getElementById("off").style.display = 'none';
+		document.getElementById("on").style.display = 'block';
+		document.getElementById("text").style.display = 'none';
+	}
+	function micon(){
+		document.getElementById("micon").style.display = 'none';
+		document.getElementById("micoff").style.display = 'block';
+	}
+	function micoff(){
+		document.getElementById("micoff").style.display = 'none';
+		document.getElementById("micon").style.display = 'block';
+	}
+</script>
+</body>
+</html>
